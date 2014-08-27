@@ -1,7 +1,12 @@
 /**
  * Reset some basic elements
  */
-body, h1, h2, h3, h4, h5, h6,
+body {
+  margin: 0;
+  padding: 0;
+  background: #000; }
+
+h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
   margin: 0;
@@ -15,8 +20,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
-  color: #111;
-  background-color: #fdfdfd; }
+  color: #F9F0F3; }
 
 /**
  * Set `margin-bottom` to maintain vertycal rhythm
@@ -62,12 +66,12 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #2a7ae2;
+  color: #703348;
   text-decoration: none; }
   a:visited {
-    color: #1756a9; }
+    color: #3b1b26; }
   a:hover {
-    color: #111;
+    color: #F9F0F3;
     text-decoration: underline; }
 
 /**
@@ -156,7 +160,7 @@ pre {
   margin-bottom: 0;
   float: left; }
   .site-title, .site-title:visited {
-    color: #424242; }
+    color: #F9F0F3; }
 
 .site-nav {
   float: right;
@@ -164,7 +168,7 @@ pre {
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #111;
+    color: #F9F0F3;
     line-height: 1.5; }
     .site-nav .page-link:not(:first-child) {
       margin-left: 20px; }
