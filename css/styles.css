@@ -10,10 +10,10 @@ body
 
 h1
 {
-	color: #FFF;
+	font-family: 'Jura', sans-serif;
+    color: #FFF;
 	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 36px;
+	font-weight: 600;
 }
 
 h4
@@ -110,7 +110,7 @@ p
     top: 50%;
     left: 50%;
     margin-top: -200px;
-    margin-left: -350px;
+    margin-left: -250px;
 }
 
 #center-nav{
@@ -125,8 +125,8 @@ p
 a{
     color: #999; 
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-	font-size: 25px;
+    font-family: 'Jura', sans-serif;
+	font-weight: 400;
 
 }
 

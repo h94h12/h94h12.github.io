@@ -215,7 +215,8 @@ pre {
 .contact-list,
 .social-media-list {
   list-style: none;
-  margin-left: 0; }
+  margin-left: 0;
+  font-size: 11px; }
 
 .footer-col-wrapper {
   font-size: 15px;

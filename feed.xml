@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Helen Han</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <title>Helen Huiming Han</title>
+    <description>Personal website of programmer/photographer.
 </description>
     <link>http://h94h12.github.io/</link>
     <atom:link href="http://h94h12.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 28 Aug 2014 11:04:25 -0700</pubDate>
-    <lastBuildDate>Thu, 28 Aug 2014 11:04:25 -0700</lastBuildDate>
+    <pubDate>Thu, 28 Aug 2014 13:20:21 -0700</pubDate>
+    <lastBuildDate>Thu, 28 Aug 2014 13:20:21 -0700</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
