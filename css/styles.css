@@ -105,6 +105,14 @@ p
 	position: fixed; 
 }
 
+#center-box{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -350px;
+}
+
 #center-nav{
     color: #FFF;
     top: 0px;
