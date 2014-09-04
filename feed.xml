@@ -6,8 +6,8 @@
 </description>
     <link>http://h94h12.github.io/</link>
     <atom:link href="http://h94h12.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 03 Sep 2014 18:55:01 -0700</pubDate>
-    <lastBuildDate>Wed, 03 Sep 2014 18:55:01 -0700</lastBuildDate>
+    <pubDate>Thu, 04 Sep 2014 13:32:07 -0700</pubDate>
+    <lastBuildDate>Thu, 04 Sep 2014 13:32:07 -0700</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
@@ -35,11 +35,23 @@
     
       <item>
         <title>Tumscrapr</title>
-        <description>&lt;p&gt;Tools: Python, web.py, OpenCV, BeautifulSoup, Selenium &lt;/p&gt;
+        <description>&lt;p&gt;Tools: Python, web.py, OpenCV, BeautifulSoup, Selenium, PhantomJS, PIL, &lt;/p&gt;
 
 &lt;p&gt;Won Best Beginner’s Hack at HackJam2014!&lt;/p&gt;
 
-&lt;p&gt;After building a web crawler for &lt;a href=&quot;http://sergeykarayev.com/recognizing-image-style/&quot;&gt;computer vision research&lt;/a&gt;, I was inspired to put my newly learned scraping skills to use by using it to scrape Tumblr. I wanted to play around with image analysis, so I built this app that analyzes the aesthetic preferences of two Tumblr users. My analysis has its shortcomings since it is only a quick hack, but it was still amusing to experiment with. &lt;/p&gt;
+&lt;p&gt;After building a web crawler for &lt;a href=&quot;http://sergeykarayev.com/recognizing-image-style/&quot;&gt;computer vision research&lt;/a&gt;, I was inspired to put my newly learned scraping skills to use by using it to scrape Tumblr. I wanted to play around with image analysis, so I built this app that analyzes the aesthetic preferences of two Tumblr users. Given two users, it outputs a “match percentage” that says how similar their aesthetic tastes are.  My analysis has its shortcomings since it is only a quick hack, but it was still amusing to experiment with. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/2382481/4154902/b3c30f18-3465-11e4-9558-7c6f24f94fe0.png&quot; alt=&quot;screen shot 2014-09-04 at 11 55 36 am&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;These two users both have a white minimalistic style, while the one on the left has a few more darker posts.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/2382481/4154905/b67bbd68-3465-11e4-912c-bc68fc5e3a35.png&quot; alt=&quot;screen shot 2014-09-04 at 11 56 59 am&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Lower match, since we’re comparing minimalism to B&amp;amp;W portraits. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/2382481/4154908/b7e76616-3465-11e4-92d4-f1c89051d015.png&quot; alt=&quot;screen shot 2014-09-04 at 11 59 35 am&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Higher match, but not as high as the first example. The user on the right uses a bit more color. &lt;/p&gt;
 
 &lt;p&gt;I used BeautifulSoup and Selenium to scrape the images of Tumblr sites. I decided to not use the Tumblr API since it could only give me twenty-ish images at a time, which was not enough for my purposes. The Selenium web driver allows me to combat the infinite scroll that Tumblr uses. It sets a large window and lets me “scroll down” to load more results. BeautifulSoup allowed me to only fetch the images from a user’s Tumblr posts and parse the image url. &lt;/p&gt;
 
