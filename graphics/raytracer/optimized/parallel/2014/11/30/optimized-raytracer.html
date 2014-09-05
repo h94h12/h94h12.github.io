@@ -124,11 +124,21 @@
   </header>
 
   <article class="post-content">
-    <p>Tools: C++, SSE intrinsics, OpenMP</p>
+    <p><a href="https://github.com/zhixu/raytracer-SSE-AABB">Github</a>, Tools: C++, SSE intrinsics, OpenMP <img src="https://cloud.githubusercontent.com/assets/2382481/4143264/7457b3f4-33c7-11e4-9f43-b68e8af5899a.png" alt="Stanford Dragon" /></p>
 
 <p>Using techniques from my Engineering Parallel Software class, my team developed an optimized raytracer. Without optimization, the raytracer takes 8 hours to render the Stanford Dragon model. After optimization, it takes 1 second!</p>
 
-<p><img src="https://cloud.githubusercontent.com/assets/2382481/4143264/7457b3f4-33c7-11e4-9f43-b68e8af5899a.png" alt="Stanford Dragon" /></p>
+<h2 id="algorithm">Algorithm</h2>
+<p>I’ll quickly explain how raytracing works, since the serial code is quite standard. This project is meant to focus on improving the serial code.
+1. Send ray from camera
+2. Intersect ray with object
+3. Send ray to light source
+4. If light is blocked, get a shadow
+5. Using lighting to compute color according
+ to Phong Illumination model
+6. Reflections (recursive step)</p>
+
+<p>We first have to determine which of these steps is most computationally expensive. This is the ray intersection test. For every pixel, we have to te</p>
 
   </article>
 

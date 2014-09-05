@@ -6,17 +6,27 @@
 </description>
     <link>http://h94h12.github.io/</link>
     <atom:link href="http://h94h12.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 04 Sep 2014 13:32:07 -0700</pubDate>
-    <lastBuildDate>Thu, 04 Sep 2014 13:32:07 -0700</lastBuildDate>
+    <pubDate>Fri, 05 Sep 2014 05:44:21 -0700</pubDate>
+    <lastBuildDate>Fri, 05 Sep 2014 05:44:21 -0700</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
         <title>Optimized Raytracing</title>
-        <description>&lt;p&gt;Tools: C++, SSE intrinsics, OpenMP&lt;/p&gt;
+        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/zhixu/raytracer-SSE-AABB&quot;&gt;Github&lt;/a&gt;, Tools: C++, SSE intrinsics, OpenMP &lt;img src=&quot;https://cloud.githubusercontent.com/assets/2382481/4143264/7457b3f4-33c7-11e4-9f43-b68e8af5899a.png&quot; alt=&quot;Stanford Dragon&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Using techniques from my Engineering Parallel Software class, my team developed an optimized raytracer. Without optimization, the raytracer takes 8 hours to render the Stanford Dragon model. After optimization, it takes 1 second!&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/2382481/4143264/7457b3f4-33c7-11e4-9f43-b68e8af5899a.png&quot; alt=&quot;Stanford Dragon&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;algorithm&quot;&gt;Algorithm&lt;/h2&gt;
+&lt;p&gt;I’ll quickly explain how raytracing works, since the serial code is quite standard. This project is meant to focus on improving the serial code.
+1. Send ray from camera
+2. Intersect ray with object
+3. Send ray to light source
+4. If light is blocked, get a shadow
+5. Using lighting to compute color according
+ to Phong Illumination model
+6. Reflections (recursive step)&lt;/p&gt;
+
+&lt;p&gt;We first have to determine which of these steps is most computationally expensive. This is the ray intersection test. For every pixel, we have to te&lt;/p&gt;
 </description>
         <pubDate>Sun, 30 Nov 2014 14:02:44 -0800</pubDate>
         <link>http://h94h12.github.io/graphics/raytracer/optimized/parallel/2014/11/30/optimized-raytracer.html</link>
@@ -35,7 +45,7 @@
     
       <item>
         <title>Tumscrapr</title>
-        <description>&lt;p&gt;Tools: Python, web.py, OpenCV, BeautifulSoup, Selenium, PhantomJS, PIL, &lt;/p&gt;
+        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/h94h12/Tumscrapr&quot;&gt;Github&lt;/a&gt;, Tools: Python, web.py, OpenCV, BeautifulSoup, Selenium, PhantomJS, PIL, &lt;img src=&quot;https://cloud.githubusercontent.com/assets/2382481/4154902/b3c30f18-3465-11e4-9558-7c6f24f94fe0.png&quot; alt=&quot;screen shot 2014-09-04 at 11 55 36 am&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Won Best Beginner’s Hack at HackJam2014!&lt;/p&gt;
 
@@ -83,11 +93,7 @@
     
       <item>
         <title>Procedural Terrain Generation</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/h94h12/MT-Terrain&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Tools: C++, OpenGL&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/2382481/4143559/47cee1a8-33cd-11e4-8804-4fe0a379f964.png&quot; alt=&quot;landscape&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/h94h12/MT-Terrain&quot;&gt;Github&lt;/a&gt;, Tools: C++, OpenGL &lt;img src=&quot;https://cloud.githubusercontent.com/assets/2382481/4143559/47cee1a8-33cd-11e4-8804-4fe0a379f964.png&quot; alt=&quot;landscape&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This was the final project for my graphics class. I was inspired by generative art and how it allows computer science and visual arts to intersect, so procedural terrain generation seemed like a fun project. It combines many interesting elements: stochastic processes (for randomly generating the terrain), computational geometry (using Marching Tetrahedra algorithm) exploration of the terrain, and art (deciding on colors, appearances). &lt;/p&gt;
 
